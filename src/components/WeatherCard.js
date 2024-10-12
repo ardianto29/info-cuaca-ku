@@ -1,13 +1,13 @@
 export default function WeatherCard({ weather }) {
   const getWeatherIcon = (condition) => {
     const icons = {
-      'CERAH': '../../icons/Group 25.png',
-      'BERAWAN': '../../icons/Group 8.png',
-      'HUJAN': '../../icons/Group 17.png',
-      'GERIMIS': '../../icons/Group 18.png',
-      'BADAI': '../../icons/Group 12.png',
-      'BERSALJU': '../../icons/Group 14.png',
-      'BERKABUT': '../../icons/Group 31.png'
+      'CERAH': '../../icons/Group25.png',
+      'BERAWAN': '../../icons/Group8.png',
+      'HUJAN': '../../icons/Group17.png',
+      'GERIMIS': '../../icons/Group18.png',
+      'BADAI': '../../icons/Group12.png',
+      'BERSALJU': '../../icons/Group14.png',
+      'BERKABUT': '../../icons/Group31.png'
     };
     return icons[condition] || '/icons/Group 8.png';
   };
@@ -37,7 +37,7 @@ export default function WeatherCard({ weather }) {
             <p>{weather.humidity}%</p>
           </div>
           <div>
-            <img src="/icons/Kecepatan dan arah angin.png" alt="Kecepatan Angin" className="w-8 h-19 mx-auto" />
+            <img src="/icons/kecepatan_angin.png" alt="Kecepatan Angin" className="w-8 h-19 mx-auto" />
             <p>{weather.windSpeed} KM/JAM</p>
           </div>
         </div>
